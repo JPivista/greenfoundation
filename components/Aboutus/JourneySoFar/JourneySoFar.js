@@ -23,7 +23,7 @@ const JourneySoFar = () => {
                 <Container className='py-4'>
                     <Row className='w-100'>
                         <Col md={4}>
-                            <Image src='/aboutus/journeysofar/journey_left_img.png' alt='agri' />
+                            <Image src='/aboutus/journeysofar/journey_left_img.png' alt='agri' fluid />
                         </Col>
                         <Col className='text-center w-100'>
                             <h4 className='border border-2 border-dark rounded p-5 lh-base fs-3  w-100'>Our work to empower the small scale and marginal farmers of India first began in 1994 with a simple effort to distribute indigenous seed varieties in and around the village of Thalli, Tamil Nadu. This soon turned into a growing biodiversity conservation programme that has been central to our work ever since.</h4>

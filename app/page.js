@@ -7,6 +7,8 @@ import Footer from '../components/shared/Footer/index.jsx'
 
 import MainHome from '../pages/home'
 
+import './globals.css'
+
 
 export default function Home() {
   return (

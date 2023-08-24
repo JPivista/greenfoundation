@@ -21,7 +21,7 @@ const OurTeamHeader = () => {
                     </Link>
                 </Col>
                 <Col className='m-2 p-2 border border-1 border-dark rounded'>
-                    <Link href="" className='text-decoration-none d-flex flex-row '>
+                    <Link href="/our-reach" className='text-decoration-none d-flex flex-row '>
                         <Image src='/aboutus/menu-icons/network.svg' alt='' />
                         <h6 className='m-0 p-2 text-dark'>Our Reach</h6>
                     </Link>
@@ -34,7 +34,7 @@ const OurTeamHeader = () => {
                 </Col>
                 <Col className='m-2 p-2 about-tap-bg'>
                     <Link href="/core-team" className='text-decoration-none d-flex flex-row '>
-                        <Image src='/aboutus/menu-icons/teams.svg' alt='' width={25} />
+                        <Image src='/aboutus/menu-icons/our_team_white.svg' alt='' width={25} />
                         <h6 className='m-0 p-2 text-white'>Our Team</h6>
                     </Link>
                 </Col>

@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { Button, Image } from 'react-bootstrap';
+import Link from 'next/link';
 
 const Header = () => {
     return (
@@ -14,9 +15,9 @@ const Header = () => {
 
             <Navbar expand="lg" className="bg-body-tertiary p-0">
                 <Container fluid style={{ background: '#FFF7D8' }}>
-                    <Navbar.Brand href="#home" className='w-50'>
+                    <Link href="/" className='w-50'>
                         <Image src="/header_footer/gf_logo.png" alt='cglogo' height={90} width={90} />
-                    </Navbar.Brand>
+                    </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='d-md-flex flex-md-column flex-md-wrap align-content-md-end'>
                         <Nav className="me-auto w-75 d-md-flex flex-md-row flex-md-wrap justify-content-md-between">

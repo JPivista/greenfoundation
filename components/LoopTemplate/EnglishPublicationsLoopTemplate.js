@@ -16,7 +16,7 @@ const EnglishPublicationsLoopTemplate = () => {
         rows.push(
             <div key={i / 2} className="row-english-loop-publication py-md-3 py-0">
                 {rowItems.map((item) => (
-                    <Row key={item.title} className="item-news-loop rounded-4 ">
+                    <Row key={item.title} className="item-english-loop rounded-4 ">
                         <Col>
                             <Image src={item.imageUrl} alt={item.title} width="100%" />
                         </Col>

@@ -134,6 +134,20 @@ const posts = [
         excerpt: 'Recently, GREEN hosted a farmers’ meet in Kanakapura, for community members seeking organic farming certification through the Participatory Guarantee System (PGS).',
         singpageUrl: '/sustainability-in-organic-farming-certification',
     },
+    {
+        title: 'Food from Your Garden: ‘Oota from Thota’',
+        image: '/publications/news-and-events/food_from_your_garden_img.png',
+        date: ' November 24, 2011 | News & Events',
+        excerpt: 'A growing number of people in urban cities and towns are looking to adopt a healthier, better rounded lifestyle. Many are increasingly becoming aware of the benefits of organically grown produce and are enthusiastic…',
+        singpageUrl: '/food-from-your-garden-oota-from-thota',
+    },
+    {
+        title: 'Organic Farming Certification: PGS Meet',
+        image: '/publications/news-and-events/organic_farming_certification_meet_img.png',
+        date: 'November 22, 2011 | News & Events',
+        excerpt: 'The PGS Meet at Maralawadi Hobli, facilitated by GREEN on 25th August, aimed to raise awareness of organic farming certification in the project area, with the objective of increasing the number of certified farmers…',
+        singpageUrl: '/organic-farming-certification-pgs-meet',
+    },
 
 
 

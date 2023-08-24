@@ -8,7 +8,7 @@ const CoreTeam = () => {
         <>
             <Container>
                 <Row className='my-4 our-team-box' style={{ background: '#d8e0cc' }}>
-                    <Col md={3} className='p-0'>
+                    <Col md={3} className='p-0 '>
                         <Image src='/aboutus/our-team/vanaja_ramprasad.png' alt='' />
                     </Col>
                     <Col className='core-team-text-green'>

@@ -32,7 +32,7 @@ const EconomicReason = () => {
 
                     <h4><b>Rise in Food Insecurity Due to Changing Agricultural Practices</b></h4>
 
-                    <Image src='/aboutus/whatdriveus/rice_food.png' alt='rice' className='' />
+                    <Image src='/aboutus/whatdriveus/rice_food.png' alt='rice' className='' fluid />
 
                     <p>When farmers switched from the cultivation of traditional food crops like ragi to cash crops such as cotton, their daily diet also changed significantly. Many food crops used for personal consumption were not available to them after this shift in their cropping patterns, depriving their households of much-needed nutrition. Sadly, this shift in agricultural practices also resulted in a large scale loss of biodiversity in many areas because farmers simply stopped cultivating local seed varieties.</p>
 

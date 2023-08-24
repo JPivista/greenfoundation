@@ -20,6 +20,12 @@
 .container-fluid {
   background: #F2F2F2;
 }
+
+p {
+  font-size:18px !important;
+  letter-spacing: 0.5px;
+  color: #222222;
+}
     /* Home page */
   
   .home-bg-container {
@@ -134,8 +140,50 @@
   
 } */
 
+.our-reach-main-container.row {
+  min-height: 540px;
+  overflow: hidden;
+}
 
-/* Partners carousef */
+.green-bg-our-reach {
+  margin: 0;
+  padding: 10px;
+  background-color: #126634;
+  border-style: solid;
+  border-width: 2px 0 0;
+  border-color: #d29e38;
+  min-height: 180px;
+}
+
+.ka-our-reach:hover {
+  min-height:540px;
+  border-transition: 0.3s;
+}
+
+.ka-our-reach, .tn-our-reach, .mp-our-reach, .ch-our-reach { 
+  height:300px;
+}
+
+.tn-our-reach:hover {
+height:350px;
+}
+
+.mp-our-reach:hover, .ch-our-reach:hover {
+height: 320px;
+}
+
+{
+  height: 248px;
+}
+
+
+
+p.text-white.custom-reach-para {
+  font-size: 15px !important;
+}
+
+
+/* Partners carousel */
 button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
   display: none;
 }

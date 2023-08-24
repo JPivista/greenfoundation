@@ -8,7 +8,7 @@ const RaisingAwareness = () => {
                 <Container className='text-center'>
                     <h3 className=' text-green text-center'><b>Raising Awareness</b></h3>
 
-                    <Image src='/aboutus/whatdriveus/raising_awareness_img.png' alt='ra' />
+                    <Image src='/aboutus/whatdriveus/raising_awareness_img.png' alt='ra' fluid />
 
                     <p>Fostering public awareness at a grassroots level has been essential in propelling the movement forward. GREEN initiates programs such as seed fares and yatras, which have proved a useful means of disseminating our core philosophy. Seminars and workshops on Government policy are held regularly held to sensitize farmers on issues directly concerning them.</p>
 

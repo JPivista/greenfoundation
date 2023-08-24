@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
-// import 'react-multi-carousel/lib/styles.css';
 import Carousel from 'react-multi-carousel';
 
+import '../custom.css'
 
 const Partners = () => {
     const responsive = {
@@ -53,9 +54,13 @@ const Partners = () => {
                                 </div>
                                 {/* Add more items as needed */}
                             </Carousel>
-                            <Button style={{ background: '#2e6339' }}>See Our List of Partners</Button>
+
+                            <Link href="/partners/" className='text-decoration-none text-black' target='_blank'><h6 className='bg-green d-inline p-2 rounded-2 text-white'>See Our List of Partners</h6></Link>
                         </Col>
                     </Row>
+
+
+
                 </Container>
             </Container >
         </>

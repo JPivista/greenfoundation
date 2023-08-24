@@ -59,7 +59,7 @@ const OpenUniversity = () => {
 
                         <Row className='d-flex flex-md-row flex-column'>
                             <Col md={3}>
-                                <Image src='/publications/news-and-events/open-university/shivamma.jpg' alt='' fluid />
+                                <Image src='/publications/news-and-events/open-university/shivamma.jpg' alt='' className='float-start' fluid />
                                 <h6><i>Shivamma</i></h6>
                             </Col>
                             <Col>
