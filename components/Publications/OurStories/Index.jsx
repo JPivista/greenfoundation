@@ -10,7 +10,6 @@ const Index = () => {
   return (
     <>
     <Header />
-
     <OurStoriesLoopTemplate />
     <Footer />
     </>

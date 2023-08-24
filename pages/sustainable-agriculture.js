@@ -2,7 +2,7 @@ import React from 'react'
 
 import SustainComponent from '../components/OurWork/SustainableAgriculture'
 
-const sustainableagriculture = () => {
+const sustainableagri = () => {
     return (
         <>
             <SustainComponent />
@@ -10,4 +10,4 @@ const sustainableagriculture = () => {
     )
 }
 
-export default sustainableagriculture
+export default sustainableagri

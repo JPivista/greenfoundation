@@ -2,7 +2,7 @@ import React from 'react'
 
 import OurStoriesComponent from '../components/Publications/OurStories'
 
-const ourstories = () => {
+const ourstorie = () => {
     return (
         <>
             <OurStoriesComponent />
@@ -10,4 +10,4 @@ const ourstories = () => {
     )
 }
 
-export default ourstories
+export default ourstorie
