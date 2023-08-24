@@ -1,6 +1,6 @@
 import React from 'react'
 
-import OurStoriesComponent from '../components/Publications/OurStories'
+import OurStoriesComponent from '../components/Publications/OurStories/Index.jsx'
 
 const ourstorie = () => {
     return (
