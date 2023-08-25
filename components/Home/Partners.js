@@ -14,7 +14,7 @@ const Partners = () => {
         },
         tablet: {
             breakpoint: { max: 1024, min: 768 },
-            items: 2,
+            items: 5,
             showDots: false, // Remove navigation dots
         },
         mobile: {
@@ -28,7 +28,7 @@ const Partners = () => {
             <Container fluid className='py-4' style={{ background: '#ede2cc' }}>
                 <h2 className='text-dark text-center '>Group Partners</h2>
 
-                <Container >
+                <Container className='w-100'>
                     <Row >
                         <Col className='text-center'>
                             <Carousel responsive={responsive}

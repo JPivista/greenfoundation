@@ -8,7 +8,7 @@ import '../custom.css'
 const Form = () => {
     return (
         <>
-            <Container className='py-5 text-center'>
+            <Container className='py-5 text-center w-100'>
                 <h5>GREEN Foundation welcomes volunteers, who are committed to contribute substantially in terms of concepts and field work.</h5>
                 <form>
                     <Row className='gap-3 py-4 d-flex flex-md-row flex-column'>

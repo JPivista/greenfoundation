@@ -6,7 +6,7 @@ import '../custom.css'
 
 const NewsandEvents = () => {
     return (
-        <Container className='p-0 py-5 text-center'>
+        <Container className='p-0 py-5 text-center w-100'>
             <h2 className='pb-3'>News & Events</h2>
             <Row className='d-flex flex-md-row flex-column text-start'>
                 <Col md={6} >
