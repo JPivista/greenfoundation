@@ -6,8 +6,8 @@ import '../custom.css'
 const PolicyEngagementContent = () => {
     return (
         <>
-            <Container fluid>
-                <Container className='p-0 py-5 text-md-center text-start d-flex flex-column justify-content-center align-items-center gap-4'>
+            <Container fluid className='bg-custom-grey'>
+                <Container className='p-0 py-5 text-md-center text-start d-flex flex-column justify-content-center align-items-center gap-4 '>
                     <Col className='bg-litegreen p-5 rounded-4' md={11}>
                         <h3 className='text-center lh-base'>
                             This section highlights the importance for GREEN Foundation to focus on policies on variety of issues, the Foundation’s stand on each of those policy areas with reasons, and the work undertaken during the year under this component.

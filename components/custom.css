@@ -46,6 +46,10 @@
     
   }
 
+  .bg-custom-grey{
+    background: #F2F2F2;
+  }
+
   .bg-lightgreen {
     background: #F2F2F2;
   }
@@ -220,7 +224,7 @@ h4.englis-publication-head-loop-font{
 
   /* Footer  */
 
-  a.text-decoration-none.text-white.footer-text {
+a.text-decoration-none.text-white.footer-text {
     font-size: 14px;
 }
 

@@ -12,7 +12,7 @@ const VermicompostContent = () => {
 
                 <Row className='vermicompost-content-bg '>
                     <Col className='bg-opacity-50 bg-black d-flex flex-column align-items-center justify-content-end text-white p-4'>
-                        <p>This is 100% organic fertilizer is made by feeding farm waste material to certain species of worms. As the worms eat this biomass and pass it through their bodies, it is converted to vermicompost. Rich in all essential plant nutrients, vermicompost is both cost effective for the farmer and ideally suited for soil enrichment. It greatly reduces a farmer’s dependency on chemical fertilizers, enhances soil fertility while also increasing the quantity and quality of crops.
+                        <p className='text-white'>This is 100% organic fertilizer is made by feeding farm waste material to certain species of worms. As the worms eat this biomass and pass it through their bodies, it is converted to vermicompost. Rich in all essential plant nutrients, vermicompost is both cost effective for the farmer and ideally suited for soil enrichment. It greatly reduces a farmer’s dependency on chemical fertilizers, enhances soil fertility while also increasing the quantity and quality of crops.
                         </p>
                     </Col>
                 </Row>

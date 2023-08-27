@@ -10,7 +10,7 @@ const MarketingExhibition = () => {
             <Container className='py-5 p-0'>
                 <Link href='/news-and-events' className='d-flex flex-md-row flex-column gap-3 justify-md-content-start align-content-center align-items-center text-decoration-none '>
                     <Image src='/publications/our-stories/back_to_stories_icon_green.svg' alt='' />
-                    <h5 className='p-0 m-0 text-green fw-bolder'>Back to Our stories</h5>
+                    <h5 className='p-0 m-0 text-green fw-bolder'>Back to News & Events</h5>
                 </Link>
 
                 <hr className='my-4' />
@@ -54,7 +54,7 @@ const MarketingExhibition = () => {
                     </Col>
 
                     <Col className='py-md-0 py-5'>
-                        <h2>Related stories</h2>
+                        <h2>Related</h2>
                     </Col>
                 </Row>
             </Container>

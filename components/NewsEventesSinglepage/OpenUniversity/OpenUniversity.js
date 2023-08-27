@@ -10,7 +10,7 @@ const OpenUniversity = () => {
             <Container className='py-5 p-0'>
                 <Link href='/news-and-events' className='d-flex flex-md-row flex-column gap-3 justify-md-content-start align-content-center align-items-center text-decoration-none '>
                     <Image src='/publications/our-stories/back_to_stories_icon_green.svg' alt='' />
-                    <h5 className='p-0 m-0 text-green fw-bolder'>Back to Our stories</h5>
+                    <h5 className='p-0 m-0 text-green fw-bolder'>Back to News & Events</h5>
                 </Link>
 
                 <hr className='my-4' />
@@ -18,11 +18,9 @@ const OpenUniversity = () => {
                 <Row className='p-0 '>
                     <Col md={8} className='d-flex flex-column gap-2'>
                         <Image src='/publications/news-and-events/open_university_workshop_2.png' alt='' fluid />
-                        <h3>Seed Fair</h3>
+                        <h3>Open University Workshop</h3>
                         <h6 className='text-green'>March 10, 2019</h6>
                         <h2>Change in Farming Lives in South India, Past and Present</h2>
-                        <p>Traditional seed fair was celebrated in Tamil Nadu, Pudukkottai district on 08-05-2018.GREEN Foundation and Vrutti jointly worked with three FPOs to set up a Community Seed Bank called Makarantham Community Seed Bank. Makarantham CSB members fully participated and…</p>
-
                         <h5 className='fw-bolder'>Purpose of the Research</h5>
                         <ul>
                             <li>PURPOSE OF THE RESEARCH</li>
@@ -107,7 +105,7 @@ const OpenUniversity = () => {
                                 <h6><i>Gundamma and Muniamma</i></h6>
                             </Col>
                             <Col>
-                                <h5 className='fw-bolder'>Now we have more time</h5>
+                                <h5 className='fw-bolder'>Grinding stone</h5>
                                 <p>
                                     Mrs. Gundamma and Mrs. Muniamma were from Bellalam , Thally. They used to make flour using hand pounding machine.They used to sing random song during their work for not getting sleep. They are able to grind 20 to 30 kg of Ragi.
                                 </p>

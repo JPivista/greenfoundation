@@ -50,7 +50,7 @@ const items = [
     },
     {
         title: 'Sustainable Agricultural Practices',
-        imageUrl: '/publications/english-publication/equator_initiative_green_foundation_India.jpg',
+        imageUrl: '/publications/english-publication/susthira_krishi_paddhathigalu.png',
         excerpt: 'This documents the various organic farming and sustainable practices GREEN introduces to farmers in its training sessions. It gives detailed, step-by-step procedures to various farming practices such as seed treatment and storage techniques, organic manure and herbal pesticide preparations, improved agricultural practices such as System of Rice Intensification (SRI) etc.',
         pdfurl: '/publications/english-publication/pdf/equator_initiative_green_foundation_India.pdf'
     },

@@ -27,7 +27,7 @@ const posts = [
         image: '/publications/news-and-events/rare-varity-2/rare_variety_demonstration_2.png',
         date: 'March 11, 2019 | News & Events',
         excerpt: 'RVD for Raagi was done at Veerayanadoddi, Hunusanahalli cluster. It was done on 10 Guntas (0.25 acre) of land. Raagi seeds were collected from various seed banks and 92 varieties were selected for RVD. Then nursery for Raagi was prepared, seeds were sown and covered with vermicompost…',
-        singpageUrl: '/marketing-exhibition-and-events-2018-2',
+        singpageUrl: '/rare-variety-demonstration',
     },
     {
         title: 'Open University Workshop',

@@ -4,6 +4,8 @@ import { Col, Container, Image, Row } from 'react-bootstrap'
 import '../custom.css'
 
 const ResearchCommunicationContent = () => {
+
+
     return (
         <>
 
@@ -83,7 +85,7 @@ const ResearchCommunicationContent = () => {
                             <h5>
                                 Findings from the Research and Presentations
                             </h5>
-                            <p>
+                            <p className='text-white'>
                                 The researchers took four main topics for the discussion and for research. The videos and presentations prepared on those topics. The elderly women, men and younger generation farmers are also interviewed for collecting information on the topic. Around 25 farmers are interviewed. The elderly people shared their indigenous knowledge for documentation. The knowledge is divided into 4 main categories as follows which are relevant to the research and traditional knowledge were extracted from the farmers.
                             </p>
                         </Col>

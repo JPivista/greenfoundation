@@ -11,14 +11,14 @@ const EconomicReason = () => {
                     <h3 className=' text-green text-center'>Economic Reason</h3>
                     <h4 className='pb-md-5 text-center'>Poverty in the Indian Agricultural Sector</h4>
 
-                    <Row className='yellow-lime-green-bg custom-drive-row'>
-                        <Col className='custom-img-content-css' md={4}>
-                            <Image src='/aboutus/whatdriveus/ecomomic_reason.png' alt='ecological' width="100%"></Image>
+                    <Row className='yellow-lime-green-bg custom-drive-row text-white'>
+                        <Col className='custom-img-content-css ' md={4}>
+                            <Image src='/aboutus/whatdriveus/ecomomic_reason.png' alt='ecological' fluid></Image>
                         </Col>
-                        <Col className='p-md-5 p-2 text-white'>
-                            <p>One of GREEN Foundation’s driving forces is to empower farmers to achieve economic security. We help farming households do this through various initiatives such as kitchen gardens, alternate income generating programs, community seed banks etc. We provide farmers training in sustainable practices which reduce their dependency on expensive inputs.</p>
+                        <Col className='p-md-4 pb-md-5 p-2 text-white'>
+                            <p className='text-white'>One of GREEN Foundation’s driving forces is to empower farmers to achieve economic security. We help farming households do this through various initiatives such as kitchen gardens, alternate income generating programs, community seed banks etc. We provide farmers training in sustainable practices which reduce their dependency on expensive inputs.</p>
 
-                            <p>We help organic farmers gain certification through the PGS system so that their produce is more marketable. To achieve this aim, we have also initiated the formation of Janadhanya, a society which aims to strengthen farmers’ economic security through the collective efforts of the community.</p>
+                            <p className='text-white'>We help organic farmers gain certification through the PGS system so that their produce is more marketable. To achieve this aim, we have also initiated the formation of Janadhanya, a society which aims to strengthen farmers’ economic security through the collective efforts of the community.</p>
                         </Col>
                     </Row>
                 </Container>
@@ -32,7 +32,7 @@ const EconomicReason = () => {
 
                     <h4><b>Rise in Food Insecurity Due to Changing Agricultural Practices</b></h4>
 
-                    <Image src='/aboutus/whatdriveus/rice_food.png' alt='rice' className='' fluid />
+                    <Image src='/aboutus/whatdriveus/rice_food.png' alt='rice' className='ps-md-5 ms-md-5' fluid />
 
                     <p>When farmers switched from the cultivation of traditional food crops like ragi to cash crops such as cotton, their daily diet also changed significantly. Many food crops used for personal consumption were not available to them after this shift in their cropping patterns, depriving their households of much-needed nutrition. Sadly, this shift in agricultural practices also resulted in a large scale loss of biodiversity in many areas because farmers simply stopped cultivating local seed varieties.</p>
 

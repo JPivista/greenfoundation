@@ -24,7 +24,7 @@ const Header = () => {
                             <NavDropdown title="About Us" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/journey-so-far">Journey So Far</NavDropdown.Item>
                                 <NavDropdown.Item href="/why-we-do-this">What Drives Us</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Our Reach</NavDropdown.Item>
+                                <NavDropdown.Item href="/our-reach">Our Reach</NavDropdown.Item>
                                 <NavDropdown.Item href="/partners">Partners</NavDropdown.Item>
                                 <NavDropdown.Item href="/core-team">Our Team</NavDropdown.Item>
                                 <NavDropdown.Item href="/awards-and-recognitions">Awards and Recognitions</NavDropdown.Item>
@@ -44,7 +44,7 @@ const Header = () => {
                                 <NavDropdown.Item href="/our-stories">Stories from the Field</NavDropdown.Item>
                                 <NavDropdown.Item href="/greens-work-related-videos">Videos</NavDropdown.Item>
                             </NavDropdown>
-                            <Button href='#' style={{ background: '#2E6339' }}>Contact Us</Button>
+                            <Link href='/contact' style={{ background: '#2E6339' }} className='m-0 p-2 text-decoration-none text-white px-4 rounded-3'>Contact Us</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -10,14 +10,14 @@ const IndianAgri = () => {
             <Container className='py-5 p-0'>
                 <Link href='/news-and-events' className='d-flex flex-md-row flex-column gap-3 justify-md-content-start align-content-center align-items-center text-decoration-none '>
                     <Image src='/publications/our-stories/back_to_stories_icon_green.svg' alt='' />
-                    <h5 className='p-0 m-0 text-green fw-bolder'>Back to Our stories</h5>
+                    <h5 className='p-0 m-0 text-green fw-bolder'>Back to News & Events</h5>
                 </Link>
 
                 <hr className='my-4' />
 
                 <Row className='p-0 '>
                     <Col md={8} className='d-flex flex-column gap-2'>
-                        <Image src='/news-and-events/seed_fair_news_event_img_2.png' alt='' fluid />
+                        <Image src='/publications/news-and-events/indian-agri/indian_agri_img_1.png' alt='' fluid />
                         <h3>KISAN 2015 – Indian Agriculture Trade Fair</h3>
                         <h6 className='text-green'>January 17, 2015</h6>
                         <p>GREEN Foundation and Janadhanya Farmers Federation participated in the KISAN Fair that was held at Bangalore International Exhibition Center from February 9th -11th 2015. This event was supported by Ministry of Agriculture, Govt. of India and Department of Agriculture and Department of Horticulture, Govt.of Karnataka while the media support was received from All India Radio and Doordarshan. A prefarbricated stand was offered complimentary to promote GREEN’s pioneering research and development activities among farmers.

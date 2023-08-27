@@ -52,7 +52,13 @@ const NewsandEvents = () => {
                     <Link href="/training-on-assessment-of-climate-change-vulnerability-and-adaptation-strategies/" className='text-decoration-none text-black'><h6 className='bg-green text-white d-inline p-2 rounded-2'>Read More</h6></Link>
                 </Col>
             </Row>
-            <Link href="/news-and-events/" className='text-decoration-none text-black'><h6 className='text-green fw-bolder  text-white d-inline p-2 rounded-2'>View All</h6></Link>
+            <Col className='text-start'>
+                <Link href="/news-and-events/" className='text-decoration-none'>
+                    <h6 className='text-green fw-bolder d-inline p-2 rounded-2'>
+                        View All
+                    </h6>
+                </Link>
+            </Col>
 
         </Container>
     )

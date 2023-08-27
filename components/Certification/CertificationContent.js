@@ -31,14 +31,14 @@ const CertificationContent = () => {
 
                 <Col className='p-3 rounded-4 text-white' style={{ background: '#7B9F44' }}>
                     <h4 className=''>Guidelines</h4>
-                    <p>
+                    <p className='text-white'>
                         The Organic Farming Association of India (OFAI) has outlined and published the criteria that all farmers seeking certification must meet. These PGS guidelines are appropriate to small scale and regional farmers of India and are defined by principles which promote organic agriculture.
                     </p>
                 </Col>
 
                 <Col className='p-3 rounded-4 text-white' style={{ background: '#7B9F44' }}>
                     <h4 className=''>Formation of a Local Group</h4>
-                    <p>
+                    <p className='text-white'>
                         The certification procedure outlined by the OFAI is only possible if farmers organize themselves into Local Groups (LGs). Therefore, each farmer must join a Local Group within his community and become an OFAI member. He must fill in the relevant OFAI forms and read an OFAI Basic Standards document that outlines organic farming standards that must followed in order to be certified. The farmer must also sign a pledge to follow these standards within his farm.
                     </p>
                 </Col>
@@ -52,11 +52,11 @@ const CertificationContent = () => {
 
                 <Col className='p-3 rounded-4 text-white' style={{ background: '#7B9F44' }}>
                     <h4 className=''>Inspection by a Peer Appraisal Group</h4>
-                    <p>
+                    <p className='text-white'>
                         GREEN facilitates each LG to form a ‘peer appraisal group’ which will inspect the farms of members within the LG. The appraisal statement signed by the peer appraisal group is then discussed within the LG, under the guidance of GREEN, in order determine which farmers qualify for certification. If certification is denied, GREEN provides further guidance so that the concerned farmer can become organic. We also empower farmers through training programs, exposure visits, regular meetings, etc.
                     </p>
 
-                    <p>
+                    <p className='text-white'>
                         Local Groups are recognized by a Regional Council (OFAI NSC). Those groups that do not comply with set standards are derecognized by the council. The PGS India Council maintains all records of LGs, providing them with identification. It also maintains a website database of PGS Organic India.
                     </p>
                 </Col>

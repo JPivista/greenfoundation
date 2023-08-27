@@ -1,8 +1,12 @@
 import React from 'react'
 
+import KannadaPublicationsComponent from '../components/Publications/KannadaPublications'
+
 const kannadapublication = () => {
     return (
-        <div>kannadapublication</div>
+        <>
+            <KannadaPublicationsComponent />
+        </>
     )
 }
 
