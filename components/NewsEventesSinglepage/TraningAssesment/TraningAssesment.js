@@ -23,14 +23,14 @@ const TraningAssesment = () => {
                         <p>
                             The great body of research in the international community clearly highlights the gradual change in the earth’s atmospheric conditions and the impact this will have on human livelihoods. However, for millions of the world’s impoverished and disenfranchised, 75% of whom live in rural communities where agriculture is the main source of income, the concept of climate change, as understood by the scientific community, is an alien one.
                         </p>
-                        <Col md={5}>
-                            <Image src='/publications/news-and-events/traingin_assesment_1.jpg' alt='' fluid />
+                        <Col>
+                            <Image src='/publications/news-and-events/traingin_assesment_1.jpg' alt='' fluid className='float-start pe-3' />
+
+
+                            <p>
+                                Yet in many ways, farmers are the most vulnerable to this change and its effects because their livelihoods depend, to a large extent, on the weather patterns in their locality. Nowhere is this truer than in the India, where 52% of the country’s labour force finds employment in agriculture and its related activities. Assessing the impact of climate change and its effects therefore, becomes essential in assuring the food and economic security of millions, not only in the rural areas, but the urban markets they serve as well. This is even more crucial for the large majority of India’s farmers who are small scale and marginal. For many such farmers, irrigation is a remote dream, drought wreaks havoc and unpredictable rains force families to migrate in search of work and economic security. The multifarious problems farmers face due to climate variations can be best understood and evaluated through a participatory approach. And understanding these problems is the first step to finding solutions that will make communities resilient to climate change.
+                            </p>
                         </Col>
-
-                        <p>
-                            Yet in many ways, farmers are the most vulnerable to this change and its effects because their livelihoods depend, to a large extent, on the weather patterns in their locality. Nowhere is this truer than in the India, where 52% of the country’s labour force finds employment in agriculture and its related activities. Assessing the impact of climate change and its effects therefore, becomes essential in assuring the food and economic security of millions, not only in the rural areas, but the urban markets they serve as well. This is even more crucial for the large majority of India’s farmers who are small scale and marginal. For many such farmers, irrigation is a remote dream, drought wreaks havoc and unpredictable rains force families to migrate in search of work and economic security. The multifarious problems farmers face due to climate variations can be best understood and evaluated through a participatory approach. And understanding these problems is the first step to finding solutions that will make communities resilient to climate change.
-                        </p>
-
                         <p>
                             The ‘Training on assessment of climate change vulnerability and adaptation strategies’ which took place from the 3rd to 6th of November 2011, in the Bijapur district of North Karnataka was a collaborative effort conducted by GREEN Foundation in association with LI-BIRD, Nepal and POWER, Karnataka, India.
                         </p>

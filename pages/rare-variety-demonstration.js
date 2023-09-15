@@ -1,8 +1,12 @@
 import React from 'react'
 
+import RareVarityDemnonstration2 from '../components/NewsEventesSinglepage/RareVarityDemontsration2'
+
 const rarevarietydemonstration = () => {
     return (
-        <div>rarevariedemonstration</div>
+        <>
+            <RareVarityDemnonstration2 />
+        </>
     )
 }
 

@@ -110,7 +110,7 @@ const EatFruits = () => {
                             </Col>
                             <Col>
                                 <p>
-                                    Once this is done, you can narrow your list down to what vegetables you wish to start with first. Remember to keep find out if the vegetable you have chosen will grow in the agroclimatic zone you live in. Bangalore has lovely weather, and therefore, you could grow vegetables nearly all year round.
+                                    A combination of loamy garden soil, sand and peat moss also makes a good growing mixture. An inch of sandy loam to two or three inches of compost is a good place to start. Before adding soil amendments, water dry soil and let it soak for a day or two.
                                 </p>
                                 <h3>Step 4: Seeds and seedlings</h3>
                                 <p>
@@ -177,7 +177,7 @@ const EatFruits = () => {
                         </p>
 
                         <p>
-                            Weeding: you may have to do some hand weeding or hoeing, although if vegetables are grown in containers, this may be minimal. Mulching is a good option to prevent weeding. GREEN promotes mulching as this is also excellent for the soil.
+                            Pest and disease control: the best disease control for your plants is to keep the leaves dry. Several organic pestticides can be used to prevent pest control.
                         </p>
 
 
