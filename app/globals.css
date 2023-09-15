@@ -49,7 +49,7 @@ p {
   backdropFilter: blur(10px);
   background: rgba(0, 0, 0, 0.4);
 }
-
+ 
 .agro-bg-home {
     background-image: url('/home/our-work/agro_conservation.png');
     width:100%;
