@@ -15,7 +15,7 @@ const AgroContent = () => {
                     <h3 className=' text-green text-center pb-3'>Preserve the Ecology</h3>
                     <Row>
                         <Col>
-                            <Image className='ps-md-5 ms-md-5' src='/our-work/agrobio/prevence_hand.svg' alt='' />
+                            <Image className='' src='/our-work/agrobio/prevence_hand.svg' alt='' />
                             <p className='py-2'>At the root of our work is agrobiodiversity conservation. We enable the setting up of community seed banks and networks which act as seed repositories that provide farmers free access to indigenous seeds. We facilitate in-situ conservation through kitchen and community gardens as well as on-farm rare variety demonstrations. We conserve seeds ex-situ in a gene bank that contains hundreds of indigenous seed varieties.</p>
                         </Col>
 
