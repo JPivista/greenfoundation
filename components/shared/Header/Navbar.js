@@ -9,6 +9,13 @@ import { Button, Image } from 'react-bootstrap';
 import Link from 'next/link';
 
 const Header = () => {
+
+
+    const contactFont = {
+        background: '#2E6339',
+        fontSize: '16px !important'
+    }
+
     return (
         <>
 
@@ -44,7 +51,16 @@ const Header = () => {
                                 <NavDropdown.Item href="/our-stories">Stories from the Field</NavDropdown.Item>
                                 <NavDropdown.Item href="/greens-work-related-videos">Videos</NavDropdown.Item>
                             </NavDropdown>
-                            <Link href='/contact' style={{ background: '#2E6339' }} className='m-0 p-2 text-decoration-none text-white px-4 rounded-3'>Contact Us</Link>
+                            <Link href='/contact'
+                                className=' text-decoration-none'
+                            >
+                                <p
+                                    className='text-white p-1 px-3 rounded-3'
+                                    style={contactFont}
+                                >
+                                    Contact Us
+                                </p>
+                            </Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

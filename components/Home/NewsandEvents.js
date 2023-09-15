@@ -6,9 +6,9 @@ import '../custom.css'
 
 const NewsandEvents = () => {
     return (
-        <Container className='p-0 py-5 text-center w-100'>
+        <Container className='p-md-0 p-2 py-5 text-center w-100'>
             <h2 className='pb-3'>News & Events</h2>
-            <Row className='d-flex flex-md-row flex-column text-start'>
+            <Row className='d-flex flex-md-row flex-column text-start gap-md-0 gap-4'>
                 <Col md={6} >
                     <Image src='/publications/news-and-events/organic_farming_certification_meet_img.png' alt='' fluid />
                     <Link href="https://greenfoundation.in/organic-farming-certification-pgs-meet/" className='text-decoration-none text-black'><h3>Organic Farming Certification: PGS Meet</h3></Link>
