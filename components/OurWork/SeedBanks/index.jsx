@@ -7,10 +7,13 @@ import '../../Style'
 import SeedBanksHeader from './SeedBanksHeader'
 import SeedBanksBanner from './SeedBanksBanner'
 import SeedBanksContent from './SeedBanksContent'
+import { NextSeo } from 'next-seo'
 
 const index = () => {
   return (
     <>
+
+    
     <Header />
     <SeedBanksHeader />
     <SeedBanksBanner />
