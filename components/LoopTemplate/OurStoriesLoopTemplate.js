@@ -15,12 +15,12 @@ const OurStoriesLoopTemplate = () => {
     for (let i = 0; i < items.length; i += 2) {
         const rowItems = [items[i], items[i + 1]].filter(Boolean); // Filter out undefined items
         rows.push(
-            <div key={i / 2} className="row-english-loop-publication py-md-3 py-0">
+            <div key={i / 2} className="row-english-loop-publication py-0">
                 {rowItems.map((item) => (
-                    <Row key={item.title} className="item-englsih-loop rounded-4 ">
+                    <Row key={item.title} className="item-englsih-loop rounded-4" >
                         <Col>
                             <Link href={`/our_stories/${slugify(item.title, { lower: true })}`}>
-                                <Image src={item.image} alt='' width="100%" />
+                                <Image src={item.image} alt='' width={240} height={240} />
                             </Link>
                         </Col>
                         <Col>
@@ -45,7 +45,7 @@ const OurStoriesLoopTemplate = () => {
         <>
             <h1 className='text-green text-center py-4'>Stories from the field</h1>
 
-            <Container className="d-flex flex-wrap py-2 p-0">{rows}</Container>;
+            <Container className="d-flex flex-wrap py-2 p-0" style={{}}>{rows}</Container>;
 
             {/* 
             <Container className='d-flex flex-md-row flex-column pb-4 p-0'>

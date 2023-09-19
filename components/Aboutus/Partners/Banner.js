@@ -16,7 +16,7 @@ const Banner = () => {
                 </Row>
                 <Container className='d-flex justify-content-center align-items-center' style={{ height: '400px' }}>
                     <Row className='text-white'>
-                        <h1>What Drives Us</h1>
+                        <h1>Partners</h1>
                     </Row>
                 </Container>
             </Container>

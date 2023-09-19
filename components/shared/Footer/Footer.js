@@ -13,7 +13,7 @@ const Footer = () => {
         <>
             <Container fluid className='bg-black text-white py-4'>
                 <Container className='p-0 w-100'>
-                    <Row>
+                    <Row className='d-flex flex-md-row flex-column gap-0 gap-3'>
                         <Col className='d-flex flex-column align-items-start'>
                             <h5 className='border border-top-0 border-end-0 border-start-0 pb-2 d-block mb-3'>Sitemap </h5>
                             <Link href="/journey-so-far" className='text-decoration-none text-white footer-text'>About Us</Link>
