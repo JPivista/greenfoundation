@@ -8,11 +8,17 @@ import Footer from '../../shared/Footer'
 
 import JourneySoFar from './JourneySoFar'
 import JourneyHeader from './JourneyHeader'
+import JourneySoFarTimeline from './JourneySoFarTimeline';
+import Script from 'next/script';
+
+
 
 
 const index = () => {
   return (
     <>
+    <Script src='https://www.greenfoundation.in/wp-content/themes/hello-elementor-child/js/index-generated.js' />
+<Script src='https://www.greenfoundation.in/wp-content/themes/hello-elementor-child/js/libraries-generated.js' />
     <NextSeo
       title="29 years of empowering small scale farmer communities"
       description="From empowering small scale farmers to initiating a growing biodiversity conservation programme, Green Foundation has taken a holistic approach to empower communities since 1994."
@@ -51,6 +57,7 @@ const index = () => {
     <Header />
     <JourneyHeader />
     <JourneySoFar />
+    <JourneySoFarTimeline />
     <Footer />
     </>
   )
