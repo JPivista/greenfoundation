@@ -7,6 +7,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import '../../custom.css'
 
 import '../../Style'
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -33,10 +34,10 @@ const Footer = () => {
 
                             <Col className='d-flex flex-row gap-2'>
                                 <Link href="https://www.youtube.com/@greenfoundationcatalyst5429" target='_blank' className='text-decoration-none text-white'>
-                                    <i class="bi bi-youtube" />
+                                    <Image src='/header_footer/Youtube.svg' width={50} height={50} alt='youtube' />
                                 </Link>
                                 <Link href="https://www.linkedin.com/company/greenfoundation-india/" target='_blank' className='text-decoration-none text-white'>
-                                    <i class="bi bi-linkedin"></i>
+                                    <Image src='/header_footer/linkedin.svg' width={50} height={50} alt='youtube' />
                                 </Link>
                             </Col>
                         </Col>
