@@ -244,3 +244,12 @@ i.bi.bi-youtube ,i.bi.bi-linkedin{
   background: green;
   border-radius: 25px;
 }
+
+
+
+/* Form */
+
+h1.reg-error.mt-4 {
+  font-size: 18px;
+    color: red;
+}

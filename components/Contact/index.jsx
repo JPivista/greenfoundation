@@ -6,6 +6,8 @@ import Footer from '../shared/Footer/Footer'
 import '../Style'
 import ContactForm from './ContactForm'
 import { NextSeo } from 'next-seo'
+import AutoLayoutExample from './Contactus'
+import Contact7Form from './Contact7Form'
 
 const index = () => {
   return (
@@ -46,6 +48,9 @@ const index = () => {
       />
     <Header />
     <ContactForm />
+    {/* <AutoLayoutExample /> */}
+
+    {/* <Contact7Form /> */}
     <Footer />
     </>
   )
