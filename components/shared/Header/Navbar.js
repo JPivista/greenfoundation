@@ -8,6 +8,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button, Image } from 'react-bootstrap';
 import Link from 'next/link';
 
+import '../headerfooter.css'
+
 const Header = () => {
 
 
@@ -29,27 +31,27 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav" className='d-md-flex flex-md-column flex-md-wrap align-content-md-end'>
                         <Nav className="me-auto w-75 d-md-flex flex-md-row flex-md-wrap justify-content-md-between">
                             <NavDropdown title="About Us" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/journey-so-far">Journey So Far</NavDropdown.Item>
-                                <NavDropdown.Item href="/why-we-do-this">What Drives Us</NavDropdown.Item>
-                                <NavDropdown.Item href="/our-reach">Our Reach</NavDropdown.Item>
-                                <NavDropdown.Item href="/partners">Partners</NavDropdown.Item>
-                                <NavDropdown.Item href="/core-team">Our Team</NavDropdown.Item>
-                                <NavDropdown.Item href="/awards-and-recognitions">Awards and Recognitions</NavDropdown.Item>
+                                <Link href="/journey-so-far" className='header-links'>Journey So Far</Link>
+                                <Link href="/why-we-do-this" className='header-links'>What Drives Us</Link>
+                                <Link href="/our-reach" className='header-links'>Our Reach</Link>
+                                <Link href="/partners" className='header-links'>Partners</Link>
+                                <Link href="/core-team" className='header-links'>Our Team</Link>
+                                <Link href="/awards-and-recognitions" className='header-links'>Awards and Recognitions</Link>
                             </NavDropdown>
                             <NavDropdown title="Our Work" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/agrobiodiversity-conservation">Agrobiodiversity Conservation</NavDropdown.Item>
-                                <NavDropdown.Item href="/sustainable-agriculture">Sustainable Agriculture</NavDropdown.Item>
-                                <NavDropdown.Item href="/farm-ponds">Soil and Water Conservation</NavDropdown.Item>
-                                <NavDropdown.Item href="/seed-banks">Seed Projects</NavDropdown.Item>
-                                <NavDropdown.Item href="/certification">Certification</NavDropdown.Item>
-                                <NavDropdown.Item href="/research-and-communication">Research and Communication</NavDropdown.Item>
-                                <NavDropdown.Item href="/policy-engagement">Policy Engagement</NavDropdown.Item>
+                                <Link href="/agrobiodiversity-conservation" className='header-links'>Agrobiodiversity Conservation</Link>
+                                <Link href="/sustainable-agriculture" className='header-links'>Sustainable Agriculture</Link>
+                                <Link href="/farm-ponds" className='header-links'>Soil and Water Conservation</Link>
+                                <Link href="/seed-banks" className='header-links'>Seed Projects</Link>
+                                <Link href="/certification" className='header-links'>Certification</Link>
+                                <Link href="/research-and-communication" className='header-links'>Research and Communication</Link>
+                                <Link href="/policy-engagement" className='header-links'>Policy Engagement</Link>
                             </NavDropdown>
                             <NavDropdown title="Publications" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/news-and-events">News & Events</NavDropdown.Item>
-                                <NavDropdown.Item href="/english-publication">Publications</NavDropdown.Item>
-                                <NavDropdown.Item href="/our-stories">Stories from the Field</NavDropdown.Item>
-                                <NavDropdown.Item href="/greens-work-related-videos">Videos</NavDropdown.Item>
+                                <Link href="/news-and-events" className='header-links'>News & Events</Link>
+                                <Link href="/english-publication" className='header-links'>Publications</Link>
+                                <Link href="/our-stories" className='header-links'>Stories from the Field</Link>
+                                <Link href="/greens-work-related-videos" className='header-links'>Videos</Link>
                             </NavDropdown>
                             <Link href='/contact'
                                 className=' text-decoration-none'

@@ -3,66 +3,50 @@ import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 
-import '../custom.css'
+// import '../custom.css'
 
 const Partners = () => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 5,
-            showDots: false, // Remove navigation dots
+            items: 3,
+            slidesToSlide: 5 // optional, default to 1.
         },
         tablet: {
-            breakpoint: { max: 1024, min: 768 },
-            items: 5,
-            showDots: false, // Remove navigation dots
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            slidesToSlide: 2 // optional, default to 1.
         },
         mobile: {
-            breakpoint: { max: 768, min: 0 },
+            breakpoint: { max: 464, min: 0 },
             items: 1,
-            showDots: false, // Remove navigation dots
-        },
+            slidesToSlide: 1 // optional, default to 1.
+        }
     };
     return (
         <>
-            <Container fluid className='py-4' style={{ background: '#ede2cc' }}>
-                <h2 className='text-dark text-center '>Group Partners</h2>
 
-                <Container className='w-100'>
-                    <Row >
-                        <Col className='text-center'>
-                            <Carousel responsive={responsive}
-                                infinite
-                                autoPlay
-                                // autoPlaySpeed={2000}
-                                className='py-5 px-3 d-flex align-items-center'>
-                                {/* Place your carousel items here */}
-                                <div className='p-3'>
-                                    <Image src='/home/our-reach/fuzhio.svg' alt='fuzhio' width="100%" />
-                                </div>
-                                <div className='p-3'>
-                                    <Image src='/home/our-reach/CG.svg' alt='CG' width="100%" />
-                                </div>
-                                <div className='p-3'>
-                                    <Image src='/home/our-reach/vrutti.svg' alt='vrutti' width="100%" />
-                                </div>
-                                <div className='p-3'>
-                                    <Image src='/home/our-reach/swasti.svg' alt='swasti' width="100%" />
-                                </div>
-                                <div className='p-3'>
-                                    <Image src='/home/our-reach/cms.svg' alt='swasti' width="100%" />
-                                </div>
-                                {/* Add more items as needed */}
-                            </Carousel>
-
-                            <Link href="/partners/" className='text-decoration-none text-black' target='_blank'><h6 className='bg-green d-inline p-2 rounded-2 text-white'>See Our List of Partners</h6></Link>
-                        </Col>
-                    </Row>
-
-
-
-                </Container>
-            </Container >
+            <Carousel
+                swipeable={false}
+                draggable={false}
+                showDots={true}
+                responsive={responsive}
+                ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlaySpeed={1000}
+                keyBoardControl={true}
+                customTransition="all .5"
+                transitionDuration={500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+            >
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </Carousel>
         </>
     )
 }

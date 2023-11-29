@@ -5,16 +5,24 @@ import NewsandEvents from './NewsandEvents'
 import OurReach from './OurReach'
 import Partners from './Partners'
 import FormHome from './Form'
+import Header from '../shared/Header/Navbar'
+import Footer from '../shared/Footer/Footer'
+
+
+// import '../Style'
 
 const index = () => {
   return (
     <>
-    <HeroBanner />
-    <OurWork />
-    <NewsandEvents />
-    <OurReach />
-    <Partners />
-    <FormHome />
+
+    <Header />
+      <HeroBanner />
+      <OurWork />
+      <NewsandEvents />
+      <OurReach />
+      <Partners />
+      <FormHome />
+    <Footer />  
     </>
   )
 }
