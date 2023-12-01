@@ -2,13 +2,14 @@ import React from 'react'
 
 import Header from '../../shared/Header'
 import Footer from '../../shared/Footer'
-import NewsEventsLoopTemplate from '@/components/LoopTemplate/NewsEventsLoopTemplate'
+// import NewsEventsLoopTemplate from '@/components/LoopTemplate/NewsEventsLoopTemplate'
 import { NextSeo } from 'next-seo'
+import NewsAndEvnetsPost from './NewsAndEvnetsPost'
 
 const index = () => {
   return (
     <>
-    <NextSeo
+      <NextSeo
         title="News and Events - Green Foundation"
         description=""
         canonical="https://www.canonical.ie/"
@@ -42,9 +43,10 @@ const index = () => {
           cardType: 'summary_large_image',
         }}
       />
-    <Header />
-    <NewsEventsLoopTemplate />
-    <Footer />
+      <Header />
+      <NewsAndEvnetsPost />
+      {/* <NewsEventsLoopTemplate /> */}
+      <Footer />
     </>
   )
 }

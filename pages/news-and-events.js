@@ -4,7 +4,9 @@ import NewsEventsComponent from '../components/Publications/NewsandEvents'
 
 const newsandevents = () => {
     return (
-        <NewsEventsComponent />
+        <>
+            <NewsEventsComponent />
+        </>
     )
 }
 

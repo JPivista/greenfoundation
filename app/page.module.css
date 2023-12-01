@@ -227,3 +227,13 @@
     transform: rotate(0deg);
   }
 }
+
+
+
+.styles-for-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Change the number to the maximum number of lines you want to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
