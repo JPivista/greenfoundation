@@ -1,33 +1,33 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
 import './timeline.css'
 
 const JourneySoFarTimeline = () => {
 
-    const [isMouseScroll, setIsMouseScroll] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
 
-    const handlOnScrollZoom = () => {
-        zoom: '10px'
-    }
+    const handleScroll = () => {
+        setScrollPosition(window.scrollY);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scale = 1.9 + scrollPosition * .0005; // Adjust the scale factor as needed
+
     return (
-        <>
-            <Container fluid>
+        <div className="zoom-container" style={{ transform: `scale(${scale})` }}>
+            <p>Scroll Position: {scrollPosition}</p>
+            {/* Your zoomable content here */}
+        </div>
+    );
+};
 
-                <Container style={{ zoom: '10px' }}>
-
-                    <Row>
-                        <Col>
-                            <Col onScroll={handlOnScrollZoom}>
-                                this is zooomed
-                            </Col>
-                        </Col>
-                    </Row>
-                </Container>
-
-            </Container >
-        </>
-    )
-}
 
 export default JourneySoFarTimeline

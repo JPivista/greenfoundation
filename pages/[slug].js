@@ -26,7 +26,7 @@ export default function Page() {
         let result = await fetch(URL_Fetchpost);
         result = await result.json();
         setData(result);
-        console.log(result);
+        // console.log(result);
 
     }
 
@@ -100,7 +100,6 @@ export default function Page() {
                                     {/* <p dangerouslySetInnerHTML={{ __html: items.content.rendered }} /> */}
                                     {/* <div dangerouslySetInnerHTML={{ __html: items.content.rendered.replace(/http:\/\/localhost:3000/g, config.apiDomain) }} /> */}
                                     <div dangerouslySetInnerHTML={{ __html: items.content.rendered }} />
-
 
                                     {/* <p>
                                         {items.content.rendered}

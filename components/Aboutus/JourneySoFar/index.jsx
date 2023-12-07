@@ -57,7 +57,7 @@ const index = () => {
       <Header />
       <JourneyHeader />
       <JourneySoFar />
-      <JourneySoFarTimeline />
+      {/* <JourneySoFarTimeline /> */}
       <Footer />
     </>
   )
