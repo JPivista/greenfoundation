@@ -1,4 +1,4 @@
-import Script from 'next/script'
+import '../components/Style'
 
 export const metadata = {
   title: 'Agro-biodiversity conservation platform fostering sustainable agriculture',

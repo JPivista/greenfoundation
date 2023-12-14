@@ -12,7 +12,7 @@ import Contact7Form from './Contact7Form'
 const index = () => {
   return (
     <>
-    <NextSeo
+      <NextSeo
         title="Contact - Green Foundation"
         description=""
         canonical="https://www.canonical.ie/"
@@ -46,12 +46,12 @@ const index = () => {
           cardType: 'summary_large_image',
         }}
       />
-    <Header />
-    <ContactForm />
-    {/* <AutoLayoutExample /> */}
+      <Header />
+      <ContactForm />
+      {/* <AutoLayoutExample /> */}
 
-    {/* <Contact7Form /> */}
-    <Footer />
+      {/* <Contact7Form /> */}
+      <Footer />
     </>
   )
 }

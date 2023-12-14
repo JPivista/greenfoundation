@@ -32,7 +32,7 @@ const ContactForm = () => {
 
     function createPost() {
         setSpinner(true);
-        axios.post(`${siteUrl.SERVER_FROM}wp-json/contact-form-7/v1/contact-forms/7106/feedback`,
+        axios.post(`${siteUrl}wp-json/contact-form-7/v1/contact-forms/7036/feedback`,
             {
                 'your-name': { yourName },
                 'your-email': { yourEmail },
@@ -55,8 +55,8 @@ const ContactForm = () => {
 
                 }
                 else {
-                    setErrName(response.data['invalid_fields'][0]['message']);
-                    setErrEmail(response.data['invalid_fields'][1]['message']);
+                    // setErrName(response.data['invalid_fields'][0]['message']);
+                    // setErrEmail(response.data['invalid_fields'][1]['message']);
                     //setErrSubject(response.data['invalid_fields'][2]['message']);
                     setSpinner(false);
                     //setLoading(true);

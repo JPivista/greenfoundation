@@ -25,18 +25,16 @@ const Form = () => {
     const [success, setSuccess] = useState(true);
     const [error, setError] = useState(false);
 
+    const siteUrl = configData.domain;
+
     const handleSubmit = event => {
         // 👇️ prevent page refresh
         event.preventDefault();
-
     };
 
     function createPost() {
-
         setSpinner(true);
-
-
-        axios.post(`${configData.SERVER_FROM}contact-form-7/v1/contact-forms/6602/feedback`,
+        axios.post(`${siteUrl}wp-json/contact-form-7/v1/contact-forms/7036/feedback`,
             {
                 'your-name': { yourName },
                 'your-email': { yourEmail },
@@ -46,11 +44,9 @@ const Form = () => {
             headers: {
                 "Content-Type": 'multipart/form-data',
             }
-
         })
             .then((response) => {
                 setPost(response.data.message);
-
                 // setErrMessage(response.data['invalid_fields'][1]['message']);
                 const msg = response.data.status;
                 if (msg == 'mail_sent') {
@@ -61,8 +57,8 @@ const Form = () => {
 
                 }
                 else {
-                    setErrName(response.data['invalid_fields'][0]['message']);
-                    setErrEmail(response.data['invalid_fields'][1]['message']);
+                    // setErrName(response.data['invalid_fields'][0]['message']);
+                    // setErrEmail(response.data['invalid_fields'][1]['message']);
                     //setErrSubject(response.data['invalid_fields'][2]['message']);
                     setSpinner(false);
                     //setLoading(true);
@@ -71,6 +67,7 @@ const Form = () => {
                 console.log(response.data)
             });
     }
+
 
     return (
         <>

@@ -6,10 +6,12 @@ import AnnualReportsHeader from './AnnualReportsHeader'
 import AnnualReportsContent from './AnnualReportsContent'
 import { NextSeo } from 'next-seo'
 
+import '../../Style'
+
 const index = () => {
   return (
     <>
-    <NextSeo
+      <NextSeo
         title="Annual Reports - Green Foundation"
         description="Empowering communities to conserve biological diversity practice sustainable agriculture through community seed banks GREEN s pioneering efforts inspire nationwide impact"
         canonical="https://www.canonical.ie/"
@@ -44,10 +46,10 @@ const index = () => {
         }}
       />
 
-    <Header />
-        <AnnualReportsHeader />
-        <AnnualReportsContent />
-    <Footer />
+      <Header />
+      <AnnualReportsHeader />
+      <AnnualReportsContent />
+      <Footer />
     </>
   )
 }
