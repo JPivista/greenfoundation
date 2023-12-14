@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import configData from '../../config.json';
@@ -22,18 +23,16 @@ const ContactForm = () => {
     const [success, setSuccess] = useState(true);
     const [error, setError] = useState(false);
 
+    const siteUrl = configData.domain;
+
     const handleSubmit = event => {
         // 👇️ prevent page refresh
         event.preventDefault();
-
     };
 
     function createPost() {
-
         setSpinner(true);
-
-
-        axios.post(`${configData.SERVER_FROM}contact-form-7/v1/contact-forms/6601/feedback`,
+        axios.post(`${siteUrl.SERVER_FROM}wp-json/contact-form-7/v1/contact-forms/7106/feedback`,
             {
                 'your-name': { yourName },
                 'your-email': { yourEmail },
@@ -43,11 +42,9 @@ const ContactForm = () => {
             headers: {
                 "Content-Type": 'multipart/form-data',
             }
-
         })
             .then((response) => {
                 setPost(response.data.message);
-
                 // setErrMessage(response.data['invalid_fields'][1]['message']);
                 const msg = response.data.status;
                 if (msg == 'mail_sent') {
@@ -82,9 +79,9 @@ const ContactForm = () => {
                         <form
                             onSubmit={handleSubmit}
                             style={{ margin: '20px' }}>
-
-                            <h4 id='' className='pt-3'>Hi! I am</h4>
-
+                            <h4 id='' className='pt-3'>
+                                Hi! I am
+                            </h4>
                             <Col>
                                 <input
                                     //required
@@ -99,7 +96,6 @@ const ContactForm = () => {
                                 <span className="r_error">{errrname}</span>
                             </Col>
 
-
                             <Col>
                                 <h4 className='pt-3'>Reach Me At</h4>
 
@@ -112,11 +108,9 @@ const ContactForm = () => {
                                     placeholder="eg. test@test.com"
                                     value={yourEmail}
                                     onChange={event => setEmail(event.target.value)}
-
-                                /><span className="r_error">{errremail}</span>
-
+                                />
+                                <span className="r_error">{errremail}</span>
                             </Col>
-
 
                             <Col>
                                 <h4 className='pt-3'>City</h4>
@@ -129,15 +123,12 @@ const ContactForm = () => {
                                     placeholder="eg. Bengaluru"
                                     value={yourSubject}
                                     onChange={event => setSubject(event.target.value)}
-
-                                /><span className="r_error">{errrsubject}</span>
-
+                                />
+                                <span className="r_error">{errrsubject}</span>
                             </Col>
 
                             <Col>
-
                                 <h4 className='pt-3'>My Message</h4>
-
                                 <textarea
                                     //required
                                     rows="4"
@@ -153,14 +144,11 @@ const ContactForm = () => {
                             {spinner && <div className="spinner-border text-light" role="status" />}
 
                             <button type='submit' className='btn btn-primary register ' onClick={createPost}>Submit</button>
-
-
                         </form>
                     }
 
                     {loading && <h1 class="reg-success mt-4">{post}</h1>}
                     {error && <h1 class="reg-error mt-4">{post}</h1>}
-
                 </Col>
 
                 <Col className='text-center d-flex flex-column justify-content-center align-items-center p-5 gap-3 text-green'>
@@ -169,8 +157,9 @@ const ContactForm = () => {
                     <Col style={{ background: '#ecf1e4' }} className='p-4 d-flex flex-column justify-content-center align-items-center align-content-center rounded-3'>
                         <h5 className='text-green fw-bolder'>REGISTERED OFFICE</h5>
                         <Image src='/contact_form_img.svg' alt='' className=' mt-4' width={200} />
-
-                        <h2 className='mt-3'>Bengaluru</h2>
+                        <h2 className='mt-3'>
+                            Bengaluru
+                        </h2>
                         <p>
                             #36, Vinayaka Layout, Bhoopasandra Main Road, Bhoopasandra, Bengaluru – 560094. India
                         </p>
