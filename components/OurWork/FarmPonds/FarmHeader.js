@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 import { Container, Col, Image } from 'react-bootstrap'

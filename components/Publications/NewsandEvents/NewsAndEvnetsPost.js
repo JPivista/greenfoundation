@@ -1,3 +1,6 @@
+
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import config from '../../../config.json'

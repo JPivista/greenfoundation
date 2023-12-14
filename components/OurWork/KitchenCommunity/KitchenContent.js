@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Col, Container, Image } from 'react-bootstrap'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';

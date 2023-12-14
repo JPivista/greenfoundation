@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import axios from "axios";
