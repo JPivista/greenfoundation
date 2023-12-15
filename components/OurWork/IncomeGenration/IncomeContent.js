@@ -48,7 +48,6 @@ const IncomeContent = () => {
                                         <Col className='p-3'>
                                             <h5 className='fw-bolder'>Sri Maruthi Oil Producer Group </h5>
                                             <p className='pt-2'>A cold pressed oil processing groups has been established in the village of Chikka Maralwadi. To find an appropriate rotary machine, we visited various vendors in Mysore, Salem, Pollachi and Coimbatore. After evaluating the practicality and efficiency of various machines, we finally settled on a 1 HP rotary machine from Coimbatore. This machine can be easily operated by the women members who do not have much experience operating large machinery. Each of the 14 members contributed Rs. 1500 towards the establishment of the enterprise group. The total community contribution was Rs.21,000. Additionally, they also obtained a loan of Rs.2,00,000 from Janadhanya Farmer Federation to set up the enterprise group.</p>
-
                                         </Col>
                                         <div className='bottom-divider w-100'>
                                             <span className='divider-bottom'></span>

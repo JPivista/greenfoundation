@@ -31,7 +31,7 @@ const NewsAndEvnetsPost = () => {
 
     const loadData = async () => {
         try {
-            let result = await fetch(`${config.apiDomain}/posts?_embed&per_page=100`);
+            let result = await fetch(`${config.apiDomain}posts?_embed&per_page=100`);
             result = await result.json();
 
             setData(result);
