@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
           })(window,document,'script','dataLayer','GTM-5J2C4PF'');
         `}
       </Script>
+
       <body>
 
         {/* Google Tag Manager (noscript) */}
