@@ -1,4 +1,4 @@
-
+'use client'
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { Col, Container, Image, Row } from 'react-bootstrap';
@@ -17,11 +17,11 @@ export default function Page() {
     const [data, setData] = useState([]);
     const slug = router.query.slug;
 
-    const URL_SEO = `${config.apiDomain}/posts/${slug}&_embed`;
+    const URL_SEO = `${config.apiDomain}posts/${slug}&_embed`;
 
 
     const FetchPost = async () => {
-        const URL_Fetchpost = `${config.apiDomain}/posts?&slug=${slug}&_embed=1`;
+        const URL_Fetchpost = `${config.apiDomain}posts?&slug=${slug}&_embed=1`;
         // const url = `https://beta.greenfoundation.in/wp-json/wp/v2/posts?&slug=${slug}&_embed`;
         let result = await fetch(URL_Fetchpost);
         result = await result.json();
@@ -33,7 +33,6 @@ export default function Page() {
     console.log()
 
     useEffect(() => {
-
         FetchPost();
     }, [slug])
 
@@ -108,6 +107,9 @@ export default function Page() {
                             ))}
                         </Col>
 
+
+
+                        {/* Related Stories */}
 
                         <Col className='py-md-0 py-5'>
                             <h2>Related</h2>
