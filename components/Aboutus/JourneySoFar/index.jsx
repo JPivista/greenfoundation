@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NextSeo } from 'next-seo';
 import '../../Style'
 
@@ -8,53 +8,40 @@ import Footer from '../../shared/Footer'
 
 import JourneySoFar from './JourneySoFar'
 import JourneyHeader from './JourneyHeader'
-import JourneySoFarTimeline from './JourneySoFarTimeline';
-import Script from 'next/script';
+import GoogleAnalyticsCode from '@/components/SeoComponents/GoogleAnalyticsCode';
+import Head from 'next/head';
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
 
 
 
 
 const index = () => {
+
+  const pathname = usePathname();
+
+  const [domainName, setDomainName] = useState('');
+
+  useEffect(() => {
+    setDomainName(window.location.hostname);
+  }, []);
+
+  const pageTitle = "29 years of empowering small scale farmer communities";
+  const pageDescription = "From empowering small scale farmers to initiating a growing biodiversity conservation programme, Green Foundation has taken a holistic approach to empower communities since 1994.";
+  const MetaImage = '/images/apparel_banner.jpeg';
+  const url = `${domainName}${pathname}`;
+
+
+
+
   return (
     <>
-      <Script src='https://www.greenfoundation.in/wp-content/themes/hello-elementor-child/js/index-generated.js' />
-      <Script src='https://www.greenfoundation.in/wp-content/themes/hello-elementor-child/js/libraries-generated.js' />
-      <NextSeo
-        title="29 years of empowering small scale farmer communities"
-        description="From empowering small scale farmers to initiating a growing biodiversity conservation programme, Green Foundation has taken a holistic approach to empower communities since 1994."
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: 'https://www.url.ie/a',
-          title: '29 years of empowering small scale farmer communities',
-          description: 'From empowering small scale farmers to initiating a growing biodiversity conservation programme, Green Foundation has taken a holistic approach to empower communities since 1994.',
-          images: [
-            {
-              url: 'https://greenfoundation.in/wp-content/uploads/2023/02/Group-25828.png',
-              width: 800,
-              height: 600,
-              alt: 'Journey So Far',
-              type: 'image/jpeg',
-            },
-            {
-              url: 'https://greenfoundation.in/wp-content/uploads/2023/02/Group-25828.png',
-              width: 900,
-              height: 800,
-              alt: 'Journey So Far',
-              type: 'image/jpeg',
-            },
-            { url: 'https://greenfoundation.in/wp-content/uploads/2023/02/Group-25828.png' },
-            { url: 'https://greenfoundation.in/wp-content/uploads/2023/02/Group-25828.png' },
-          ],
-          siteName: 'SiteName',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
+
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
+
 
       <Header />
+
       <JourneyHeader />
       <JourneySoFar />
       {/* <JourneySoFarTimeline /> */}

@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HeroBanner from './HeroBanner'
 import OurWork from './OurWork'
 import NewsandEvents from './NewsandEvents'
@@ -13,46 +13,32 @@ import { NextSeo } from 'next-seo'
 
 
 import '../Style'
+import SeoTags from '../SeoComponents/Seo'
+import { usePathname } from 'next/navigation'
 
 const index = () => {
+  const pathname = usePathname();
+
+  const [domainName, setDomainName] = useState('');
+
+  useEffect(() => {
+    setDomainName(window.location.hostname);
+  }, []);
+
+  const pageTitle = "29 years of empowering small scale farmer communities";
+  const pageDescription = "From empowering small scale farmers to initiating a growing biodiversity conservation programme, Green Foundation has taken a holistic approach to empower communities since 1994.";
+  const MetaImage = '/images/apparel_banner.jpeg';
+  const url = `${domainName}${pathname}`;
+
+
+
+
   return (
     <>
-      <NextSeo
-        title="Agro-biodiversity conservation platform fostering sustainable agriculture"
-        description="Green Foundation works towards the conservation of indigenous seed varieties and helps promote sustainable agriculture through agro bio diversity conservation"
-        canonical="https://greenfoundation.in/"
-        openGraph={{
-          url: 'https://greenfoundation.in/',
-          title: 'Agro-biodiversity conservation platform fostering sustainable agriculture',
-          description: 'Green Foundation works towards the conservation of indigenous seed varieties and helps promote sustainable agriculture through agro bio diversity conservation',
-          images: [
-            {
-              url: '/our-work/agrobio/agrobiodiversity_v.png',
-              width: 800,
-              height: 600,
-              alt: 'Awards and Recognitions',
-              type: 'image/jpeg',
-            },
-            {
-              url: '/our-work/agrobio/agrobiodiversity_v.png',
-              width: 900,
-              height: 800,
-              alt: 'Awards and Recognitions',
-              type: 'image/jpeg',
-            },
-            { url: '/our-work/agrobio/agrobiodiversity_v.png' },
-            { url: '/our-work/agrobio/agrobiodiversity_v.png' },
-          ],
-          siteName: 'Green Foundation',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
-      <link rel="canonical" href="https://greenfoundation.in/" />
-      <WebsiteSchema/>
+
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
+
+      <WebsiteSchema />
       <Header />
       <HeroBanner />
       <OurWork />
