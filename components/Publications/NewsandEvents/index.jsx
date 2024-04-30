@@ -6,43 +6,23 @@ import Footer from '../../shared/Footer'
 import { NextSeo } from 'next-seo'
 import NewsAndEvnetsPost from './NewsAndEvnetsPost'
 
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
+
 const index = () => {
+
+  const pathname = usePathname();
+
+  const pageTitle = "News and Events - Green Foundation";
+  const pageDescription = "Explore our website for the latest news and events, offering a curated selection of informative content to keep you engaged and informed.";
+  const MetaImage = '';
+  const url = `https://greenfoundation.in${pathname}`;
+
   return (
     <>
-      <NextSeo
-        title="News and Events - Green Foundation"
-        description=""
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: 'https://www.url.ie/a',
-          title: 'News and Events - Green Foundation',
-          description: '',
-          images: [
-            {
-              url: '',
-              width: 800,
-              height: 600,
-              alt: 'News and Events',
-              type: 'image/jpeg',
-            },
-            {
-              url: '',
-              width: 900,
-              height: 800,
-              alt: 'News and Events',
-              type: 'image/jpeg',
-            },
-            { url: '' },
-            { url: '' },
-          ],
-          siteName: 'SiteName',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
+
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
+
       <Header />
       <NewsAndEvnetsPost />
       {/* <NewsEventsLoopTemplate /> */}

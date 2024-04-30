@@ -7,46 +7,28 @@ import '../../Style'
 import YoutubeVideosStatic from './YoutubeVideosStatic'
 import { NextSeo } from 'next-seo'
 
+
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
+
 const index = () => {
+
+  const pathname = usePathname();
+
+  const pageTitle = "GREEN’s work related videos - Green Foundation";
+  const pageDescription = "";
+  const MetaImage = '';
+  const url = `https://greenfoundation.in${pathname}`;
+
   return (
     <>
-    <NextSeo
-        title="GREEN’s work related videos - Green Foundation"
-        description=""
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: 'https://www.url.ie/a',
-          title: 'GREEN’s work related videos - Green Foundation',
-          description: '',
-          images: [
-            {
-              url: '',
-              width: 800,
-              height: 600,
-              alt: 'videos',
-              type: 'image/jpeg',
-            },
-            {
-              url: '',
-              width: 900,
-              height: 800,
-              alt: 'videos',
-              type: 'image/jpeg',
-            },
-            { url: '' },
-            { url: '' },
-          ],
-          siteName: 'SiteName',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
-    <Header />
-    <YoutubeVideosStatic />
-    <Footer />
+
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
+
+
+      <Header />
+      <YoutubeVideosStatic />
+      <Footer />
     </>
   )
 }

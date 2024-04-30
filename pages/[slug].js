@@ -92,7 +92,7 @@ export default function Page() {
                                 <div key={items.id}>
                                     <Image src={items._embedded['wp:featuredmedia'][0].source_url} alt={items.title.rendered} fluid />
                                     <div className='py-2'>
-                                        <h4 dangerouslySetInnerHTML={{ __html: items.title.rendered }} />
+                                        <h1 className='fs-3' dangerouslySetInnerHTML={{ __html: items.title.rendered }} />
                                     </div>
 
                                     <p style={{ fontSize: '11px !important', color: '#126634' }}> {formatPublishedDate(items.date)} </p>

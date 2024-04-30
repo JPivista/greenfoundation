@@ -7,48 +7,28 @@ import '../../Style'
 import OurStoriesLoopTemplate from '@/components/LoopTemplate/OurStoriesLoopTemplate'
 import { NextSeo } from 'next-seo'
 
-const Index = () => {
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
+
+const index = () => {
+
+  const pathname = usePathname();
+
+  const pageTitle = "Stories of successful farmers that reiterate resilience";
+  const pageDescription = "Impacting the lives of farmers from diverse backgrounds has been fulfilling. Our stories of success make us proud and inspire us to commit to the community even more.";
+  const MetaImage = '';
+  const url = `https://greenfoundation.in${pathname}`;
+
   return (
     <>
-    <NextSeo
-        title="Our Stories - Green Foundation"
-        description=""
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: 'https://www.url.ie/a',
-          title: 'Our Stories - Green Foundation',
-          description: '',
-          images: [
-            {
-              url: '',
-              width: 800,
-              height: 600,
-              alt: 'Our Stories',
-              type: 'image/jpeg',
-            },
-            {
-              url: '',
-              width: 900,
-              height: 800,
-              alt: 'Our Stories',
-              type: 'image/jpeg',
-            },
-            { url: '' },
-            { url: '' },
-          ],
-          siteName: 'SiteName',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
-    <Header />
-    <OurStoriesLoopTemplate />
-    <Footer />
+
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
+
+      <Header />
+      <OurStoriesLoopTemplate />
+      <Footer />
     </>
   )
 }
 
-export default Index
+export default index

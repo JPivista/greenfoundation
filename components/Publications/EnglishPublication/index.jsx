@@ -7,47 +7,28 @@ import EnglishPublicationsLoopTemplate from '@/components/LoopTemplate/EnglishPu
 import EnglishPublicationHeader from './EnglishPublicationHeader'
 import { NextSeo } from 'next-seo'
 
+
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
+
 const index = () => {
+
+  const pathname = usePathname();
+
+  const pageTitle = "English Publication - Green Foundation";
+  const pageDescription = "";
+  const MetaImage = '';
+  const url = `https://greenfoundation.in${pathname}`;
+
   return (
     <>
-    <NextSeo
-        title="English Publication - Green Foundation"
-        description=""
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: 'https://www.url.ie/a',
-          title: 'English Publication - Green Foundation',
-          description: '',
-          images: [
-            {
-              url: '',
-              width: 800,
-              height: 600,
-              alt: 'English Publication',
-              type: 'image/jpeg',
-            },
-            {
-              url: '',
-              width: 900,
-              height: 800,
-              alt: 'English Publication',
-              type: 'image/jpeg',
-            },
-            { url: '' },
-            { url: '' },
-          ],
-          siteName: 'SiteName',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
-    <Header />
-    <EnglishPublicationHeader />
-    <EnglishPublicationsLoopTemplate />
-    <Footer />
+
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
+
+      <Header />
+      <EnglishPublicationHeader />
+      <EnglishPublicationsLoopTemplate />
+      <Footer />
     </>
   )
 }

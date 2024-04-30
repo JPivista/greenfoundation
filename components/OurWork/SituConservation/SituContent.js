@@ -22,7 +22,7 @@ const SituContent = () => {
 
 
                 <Container className='text-center p-4 custom-situ-row y-3'>
-                    <h3 className='text-green'>In-situ Conservation</h3>
+                    <h2 className='text-green'>In-situ Conservation</h2>
                     <p>This is on-farm conservation, where farmers themselves conserve these seeds for cultivation in their farms. One particular advantage of in-situ conservation is that it also allows for the evolutionary process of crop-adaptation. It also gives farmers more control over their genetic resources. There are several initiatives that encourage in-situ conservation.</p>
 
                     <Row className='d-flex flex-wrap flex-md-row flex-column '>
