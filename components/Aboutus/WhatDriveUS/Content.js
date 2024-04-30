@@ -10,7 +10,7 @@ const Content = () => {
             <Container fluid className='bg-custom-grey'>
                 <Container className='py-5 text-center '>
                     <p className='bg-p-green px-md-5 py-md-4 p-2 text-white w-100'>At the GREEN Foundation, we are driven by a powerful vision: a world where vulnerable communities are climate resilient, and our sectors and systems operate with carbon neutrality. Our core mission centers on biodiversity conservation and regenerative agriculture, guided by agro-ecological principles and a deep respect for planetary boundaries. By combining these approaches, we are working towards a sustainable, equitable and resilient future. Together, we can create a world where people and the planet thrive together, safeguarding our natural resources for generations to come.</p>
-                    <h3 className='my-3 text-green '>Preserve the Ecology</h3>
+                    <h2 className='my-3 text-green '>Preserve the Ecology</h2>
 
                     <h4 className='lime-green-bg p-4 rounded lh-base'>“It was worrying that farmers had lost the pride and sense <br />
                         of ownership towards their own traditional knowledge.”</h4>

@@ -17,58 +17,34 @@ import WomenEmpowerment from './WomenEmpowerment'
 import { NextSeo } from 'next-seo'
 
 
-
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
 
 const index = () => {
+
+  const pathname = usePathname();
+
+  const pageTitle = "Why We Do This - Green Foundation";
+  const pageDescription = "Our reasons to build the community for farmers range from Ecological to Economic, and from Political to raising awareness about it. Learn more.";
+  const MetaImage = '';
+  const url = `https://greenfoundation.in${pathname}`;
+
   return (
     <>
 
-<NextSeo
-      title="Why We Do This - Green Foundation"
-      description=""
-      canonical="https://www.canonical.ie/"
-      openGraph={{
-        url: 'https://www.url.ie/a',
-        title: 'Why We Do This - Green Foundation',
-        description: '',
-        images: [
-          {
-            url: 'https://greenfoundation.in/wp-content/uploads/2023/02/Ecological_reasons.png',
-            width: 800,
-            height: 600,
-            alt: 'What Drives Us',
-            type: 'image/jpeg',
-          },
-          {
-            url: 'https://greenfoundation.in/wp-content/uploads/2023/02/Ecological_reasons.png',
-            width: 900,
-            height: 800,
-            alt: 'What Drives Us',
-            type: 'image/jpeg',
-          },
-          { url: 'https://greenfoundation.in/wp-content/uploads/2023/02/Ecological_reasons.png' },
-          { url: 'https://greenfoundation.in/wp-content/uploads/2023/02/Ecological_reasons.png' },
-        ],
-        siteName: 'SiteName',
-      }}
-      twitter={{
-        handle: '@handle',
-        site: '@site',
-        cardType: 'summary_large_image',
-      }}
-    />
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
 
-    <Header />
-    <WhatDriveHeader />
-    <WhatDriveUs />
-    <Content />
-    <TabsFunction />
-    <EconomicReason />
-    <PoliticalReasons />
-    <SeekingLegislativeSupport />
-    <RaisingAwareness />
-    <WomenEmpowerment />
-    <Footer />
+      <Header />
+      <WhatDriveHeader />
+      <WhatDriveUs />
+      <Content />
+      <TabsFunction />
+      <EconomicReason />
+      <PoliticalReasons />
+      <SeekingLegislativeSupport />
+      <RaisingAwareness />
+      <WomenEmpowerment />
+      <Footer />
     </>
   )
 }

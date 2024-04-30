@@ -29,10 +29,7 @@ const index = () => {
   const pageTitle = "29 years of empowering small scale farmer communities";
   const pageDescription = "From empowering small scale farmers to initiating a growing biodiversity conservation programme, Green Foundation has taken a holistic approach to empower communities since 1994.";
   const MetaImage = '/images/apparel_banner.jpeg';
-  const url = `${domainName}${pathname}`;
-
-
-
+  const url = `https://greenfoundation.in${pathname}`;
 
   return (
     <>

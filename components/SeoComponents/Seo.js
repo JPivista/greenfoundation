@@ -16,8 +16,8 @@ function SeoTags({ pageTitle, pageDescription, MetaImage, url, }) {
 
     const structuredData = {
         "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Upfront Global",
+        "@type": "website",
+        "name": "greenfoundation",
         "url": `${url}`,
         "potentialAction": {
             "@type": "SearchAction",

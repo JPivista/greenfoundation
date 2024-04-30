@@ -9,50 +9,28 @@ import Banner from './Banner'
 import OurPartners from './OurPartners'
 import { NextSeo } from 'next-seo'
 
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
+
 const index = () => {
+
+  const pathname = usePathname();
+
+  const pageTitle = "Green Foundation I Partners";
+  const pageDescription = "Green Foundation takes pride in working with partners who share the same vision of conserving agrobiodiversity and building health, wealth and resilience of small farmers";
+  const MetaImage = '';
+  const url = `https://greenfoundation.in${pathname}`;
+
   return (
     <>
 
-<NextSeo
-      title="Green Foundation I Partners"
-      description="Green Foundation takes pride in working with partners who share the same vision of conserving agrobiodiversity and building health, wealth and resilience of small farmers"
-      canonical="https://www.canonical.ie/"
-      openGraph={{
-        url: 'https://www.url.ie/a',
-        title: 'Green Foundation I Partners',
-        description: 'Green Foundation takes pride in working with partners who share the same vision of conserving agrobiodiversity and building health, wealth and resilience of small farmers',
-        images: [
-          {
-            url: '/aboutus/partners/vrutti.svg',
-            width: 800,
-            height: 600,
-            alt: 'Journey So Far',
-            type: 'image/jpeg',
-          },
-          {
-            url: '/aboutus/partners/vrutti.svg',
-            width: 900,
-            height: 800,
-            alt: 'Journey So Far',
-            type: 'image/jpeg',
-          },
-          { url: '/aboutus/partners/vrutti.svg' },
-          { url: '/aboutus/partners/vrutti.svg' },
-        ],
-        siteName: 'SiteName',
-      }}
-      twitter={{
-        handle: '@handle',
-        site: '@site',
-        cardType: 'summary_large_image',
-      }}
-    />
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
 
-    <Header />
-    <PartnersHeader />
-    <Banner />
-    <OurPartners />
-    <Footer />
+      <Header />
+      <PartnersHeader />
+      <Banner />
+      <OurPartners />
+      <Footer />
     </>
   )
 }

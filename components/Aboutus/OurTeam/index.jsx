@@ -9,52 +9,28 @@ import CoreTeam from './CoreTeam'
 import Banner from '../OurTeam/Banner'
 import { NextSeo } from 'next-seo'
 
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
 
 const index = () => {
+
+  const pathname = usePathname();
+
+  const pageTitle = "Core team - Green Foundation";
+  const pageDescription = "Our Core team is built on the foundation of years of experience and expertise and brings with it immense knowledge and understanding on how to build communities.";
+  const MetaImage = '';
+  const url = `https://greenfoundation.in${pathname}`;
+
   return (
     <>
 
-<NextSeo
-      title="Core team - Green Foundation
-      "
-      description=""
-      canonical="https://www.canonical.ie/"
-      openGraph={{
-        url: 'https://www.url.ie/a',
-        title: 'Core team - Green Foundation',
-        description: '',
-        images: [
-          {
-            url: '',
-            width: 800,
-            height: 600,
-            alt: 'Core Team',
-            type: 'image/jpeg',
-          },
-          {
-            url: '',
-            width: 900,
-            height: 800,
-            alt: 'Core Team',
-            type: 'image/jpeg',
-          },
-          { url: '' },
-          { url: '' },
-        ],
-        siteName: 'SiteName',
-      }}
-      twitter={{
-        handle: '@handle',
-        site: '@site',
-        cardType: 'summary_large_image',
-      }}
-    />
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
 
-    <Header />
-    <OurTeamHeader />
-    <Banner />
-    <CoreTeam />
-    <Footer />
+      <Header />
+      <OurTeamHeader />
+      <Banner />
+      <CoreTeam />
+      <Footer />
     </>
   )
 }

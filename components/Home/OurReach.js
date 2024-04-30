@@ -10,7 +10,7 @@ const OurReach = () => {
             <Container fluid className='our-reach-banner d-flex flex-wrap flex-column justify-content-between'>
                 <Container className='pt-4 w-100'>
                     <Row>
-                        <h2 className='text-center text-white'>Our Reach</h2>
+                        <h1 className='text-center text-white fw-bold'>Our Reach</h1>
                         <p className='text-center text-white'>The five project sites of GREEN along with the number of farmers it impacts are as follows:</p>
                     </Row>
                 </Container>

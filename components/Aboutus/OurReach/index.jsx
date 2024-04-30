@@ -8,51 +8,28 @@ import OurReachHeader from './OurReachHeader'
 import OurReach from '@/components/Home/OurReach'
 import { NextSeo } from 'next-seo'
 
+import SeoTags from '@/components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
+
 const index = () => {
+
+  const pathname = usePathname();
+
+  const pageTitle = "Impacting farmers across India";
+  const pageDescription = "At Green Foundation, we have been impacting the lives of farmers acorss the states of Karnataka, Tamil Nadu, Madhya Pradesh and Chhattisgarh and will continue to reach to more";
+  const MetaImage = '';
+  const url = `https://greenfoundation.in${pathname}`;
+
   return (
-   <>
+    <>
 
-<NextSeo
-      title="Impacting farmers across India"
-      description="At Green Foundation, we have been impacting the lives of farmers acorss the states of Karnataka, Tamil Nadu, Madhya Pradesh and Chhattisgarh and will continue to reach to more
-      "
-      canonical="https://www.canonical.ie/"
-      openGraph={{
-        url: 'https://www.url.ie/a',
-        title: 'Impacting farmers across India',
-        description: 'At Green Foundation, we have been impacting the lives of farmers acorss the states of Karnataka, Tamil Nadu, Madhya Pradesh and Chhattisgarh and will continue to reach to more',
-        images: [
-          {
-            url: '',
-            width: 800,
-            height: 600,
-            alt: 'What Drives Us',
-            type: 'image/jpeg',
-          },
-          {
-            url: '',
-            width: 900,
-            height: 800,
-            alt: 'What Drives Us',
-            type: 'image/jpeg',
-          },
-          { url: '' },
-          { url: '' },
-        ],
-        siteName: 'SiteName',
-      }}
-      twitter={{
-        handle: '@handle',
-        site: '@site',
-        cardType: 'summary_large_image',
-      }}
-    />
+      <SeoTags pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
 
-   <Header />
-   <OurReachHeader />
-   <OurReach />
-   <Footer />
-   </>
+      <Header />
+      <OurReachHeader />
+      <OurReach />
+      <Footer />
+    </>
   )
 }
 
